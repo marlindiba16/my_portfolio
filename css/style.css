@@ -1,0 +1,34 @@
+.btn-cv {
+  background: linear-gradient(45deg, #ff6b6b, #5f27cd); /* gradient color */
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px; /* pill shape */
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-decoration: none; /* remove underline */
+  margin: 0 10px; /* space between buttons */
+  display: inline-block;
+}
+
+.btn-cv:hover {
+  background: linear-gradient(45deg, #5f27cd, #ff6b6b);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  color: #fff;
+}
+/* Style for the labels (e.g., Name, Birthday) */
+.info-section h6 {
+  color: #ff6b6b; /* red/pink tone */
+  font-weight: 600;
+}
+
+/* Style for the details (inside <span>) */
+.info-section h6 span {
+  color: #5f27cd; /* purple tone */
+  font-weight: 500;
+}

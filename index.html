@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marlin's Portoflio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link href="./assets/favicon.ico" rel="icon">
+
+  <title>Title page</title>  
+
+<link href="./main.d8e0d294.css" rel="stylesheet"></head>
+
+<body class="">
+  
+  
+<style>
+    body {
+      background-color: #ffffff;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px;
+    }
+
+    .typed-text-output {
+      font-size: 32px;
+      font-weight: 300;
+      color: #f812b3; /* optional color */
+    }
+
+    /* =========================================
+   🌐 FULL RESPONSIVENESS FOR PORTFOLIO
+   (NO NAVBAR)
+   ========================================= */
+
+/* Base responsiveness for tablets and small laptops */
+@media (max-width: 991px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px !important;
+    text-align: center;
+  }
+
+  h2, h3 {
+    font-size: 20px !important;
+    text-align: center;
+  }
+
+  .typed-text-output {
+    font-size: 20px !important;
+  }
+
+  .oval-img {
+    width: 250px;
+    height: 300px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .social-icons a {
+    font-size: 22px;
+    margin: 5px;
+  }
+
+  .btn-cv {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .skills-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .card-block {
+    padding: 15px;
+  }
+
+  .review-box {
+    width: 95%;
+  }
+
+  /* Carousel */
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-caption {
+    position: static;
+    padding: 15px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 18px;
+  }
+
+  .carousel-caption p {
+    font-size: 14px;
+  }
+
+  /* Buttons */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 26px !important;
+  }
+
+  h2 {
+    font-size: 18px !important;
+  }
+
+  .oval-img {
+    width: 100px;
+    height: 150px;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn-cv {
+    padding: 8px 15px;
+    font-size: 10px;
+  }
+
+  .skills-row {
+    gap: 15px;
+  }
+
+  .skill-card p,
+  .review-box p {
+    font-size: 14px;
+  }
+
+  /* Carousel text smaller */
+  .carousel-caption h3 {
+    font-size: 16px;
+  }
+
+  .carousel-caption p {
+    font-size: 13px;
+  }
+}
+
+/* Tablets (landscape) */
+@media (min-width: 601px) and (max-width: 991px) {
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-8 {
+    width: 100%;
+  }
+
+  .oval-img {
+    margin-bottom: 20px;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .skills-row {
+    justify-content: center;
+  }
+
+  .review-box {
+    max-width: 90%;
+  }
+
+  .carousel-caption {
+    padding: 10px;
+  }
+}
+
+/* Extra small screens (very narrow phones) */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 22px !important;
+  }
+
+  .typed-text-output {
+    font-size: 16px !important;
+  }
+
+  .btn-cv {
+    font-size: 9px;
+    padding: 6px 12px;
+  }
+
+  .oval-img {
+    width: 170px;
+    height: 220px;
+  }
+
+  .skill-card p {
+    font-size: 13px;
+  }
+}
+
+  </style>
+
+
+
+<!-- Add your content of header -->
+<div class="background-color-layer" style="background-image: url('assets/images/img-01.jpg')"
+></div>
+<main class="content-wrapper">
+  <header class="white-text-container section-container">
+    <div class="text-center">
+      <!-- <h1 style="background: linear-gradient(45deg, #871f72, #a1306e);
+      line-height: 1; /* ensures cursor stays on same line */
+    min-height: 40px; /* reserve space for cursor */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px rgb(248, 248, 248);
+  font-weight: bold;"> -->
+ <h1 style="
+      font-weight: bold;
+    font-size: 48px;
+    color: #ffffff; /* or any color you want */
+    margin-bottom: 10px;
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+">
+  I am Marlin Diba Biswas
+</h1>
+
+<h2 class="typed-text-output" style="
+    display: inline-block;  /* important for cursor */
+    font-weight: 300;
+    font-size: 28px;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1;          /* prevents cursor from moving down */
+    min-height: 40px; 
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);       /* reserve space for cursor */
+"></h2>
+
+<div class="typed-text" style="display: none;">
+  Web Designer, Web Developer, Front End Developer, App Designer, App Developer, Graphics Designer, Data science enthusiast
+</div>
+
+<!-- Typed.js Library -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  const options = {
+    strings: document.querySelector('.typed-text').textContent.split(', '),
+    typeSpeed: 60,
+    backSpeed: 30,
+    loop: true,
+    backDelay: 1500,
+    showCursor: true,
+    cursorChar: '|',
+  };
+
+  new Typed('.typed-text-output', options);
+</script>
+
+        <!-- Social Media Icons -->
+<div class="social-icons">
+    
+  <!-- Facebook Icon -->
+<a href="https://www.facebook.com/marlin.diba.2024" target="_blank" title="Visit my Facebook">
+  <i class="fa fa-facebook " style="font-size:24px; color:#0A66C2;"></i>
+</a>
+
+ <a href="https://www.instagram.com/_diba_16_?igsh=ejBsbGw0d3ZhZDNl" target="_blank" title="Visit my Instagram">
+  <i class="fab fa-instagram " style="font-size:24px; color:#fff5f9;"></i>
+</a>
+ 
+ <a class="fa-icon fa-icon" href="https://github.com/marlindiba16" target="_blank" title="GitHub">
+  <i class="fab fa-github" style="font-size:24px; color:#181717"></i>
+</a>
+
+ <!-- <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/> -->
+
+<a href="https://www.linkedin.com/in/merlin-diba-biswas-2a938936b" target="_blank" title="Visit my LinkedIn">
+  <i class="fab fa-linkedin" style="font-size:24px; color:#0A66C2;"></i>
+</a>
+  <a class="fa-icon fa-icon" href="https://vimeo.com/" title="Visit my Profile">
+    <i class="fa fa-vimeo" style="font-size:24px; color:#1AB7EA;"></i>
+  </a>
+</div>
+
+ 
+<style>
+  .social-icons a {
+    color: #fff; /* default icon color */
+    margin: 0 10px;
+    font-size: 30px; /* adjust icon size */
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  /* Hover Effect */
+  .social-icons a:hover {
+    color: #8a3838;      /* change to any color you like */
+    transform: scale(1.2); /* slightly enlarge icon */
+  }
+</style>
+
+      </p>
+    </div>
+  </header>
+
+
+
+
+  <style>
+    .btn-cv {
+      background: linear-gradient(45deg, #ff6b6b, #5f27cd);
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+      margin: 10px;
+      display: inline-block;
+    }
+
+    .btn-cv:hover {
+      background: linear-gradient(45deg, #5f27cd, #ff6b6b);
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+      text-decoration: none;
+      color: #fff;
+    }
+
+    /* center buttons */
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+      gap: 15px;
+    }
+  </style>
+
+<!-- Add your site or app content here -->
+ 
+ <div class="container">
+   <div class="row">
+     <div class="col-xs-12">
+      <div id="about" class="card"></div>
+
+        <div class="card">
+          <div class="card-block">
+            <h2 style="color:#FF1493">About me</h2>
+            <div class="row">
+              <div class="col-md-4">
+  <p>
+    <img src="./assets/images/img-01.png" class="img-responsive oval-img" alt="">
+  </p>
+</div>
+
+<style>
+  .oval-img {
+    width: 400px;          /* Adjust the width as needed */
+    height: 500px;         /* Adjust the height as needed */
+    object-fit: cover;     /* Ensures the image fills the shape nicely */
+    border-radius: 50% / 50%;  /* Makes it oval */
+    display: block;        /*8 Removes inline spacing */
+    margin: 0 auto;        /* Centers the image horizontally */
+  }
+</style>
+
+              <div class="col-md-8">
+
+             <h2 class="mb-4" style="
+  background: linear-gradient(90deg, #d7d2cc, #bc7db5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #ff12bc;
+  text-shadow: 1px 1px 2px #fe42b6;
+"
+>Web Developer, Graphics Designer, & Data scientist</h2>
+                    <p><span style="color:#330977; "> <b>Hi, I'm Marlin Diba Biswas, a passionate Web Developer & Graphics Designer with a love for creating visually stunning and user-friendly designs. With experience in HTML, CSS, JavaScript, and UI/UX design, I strive to craft websites that are both functional and aesthetically appealing.I enjoy solving design challenges, bringing ideas to life, and continuously learning new technologies. When I'm not coding or designing, you’ll find me exploring new art styles, listening to music, or diving into anime.I'm always open to new collaborations and exciting projects! Let’s create something amazing together! </b> </span></p>
+                   <div class="row info-section">
+  <div class="col-sm-6 py-2">
+    <h5><span style="color:#330977;">Name:</b> <span style="color: #FF1493;">Marlin Diba Biswas</span></h5>
+  </div>
+  <div class="col-sm-6 py-2">
+    <h5><span style="color:#330977;">Birthday:</b> <span style="color: #FF1493;">16 September 2002</span></h5>
+  </div>
+  <div class="col-sm-6 py-2">
+    <h5><span style="color:#330977;">Degree:</b> <span style="color: #FF1493;">Bachelor</span></h5>
+  </div>
+  <div class="col-sm-6 py-2">
+    <h5><span style="color:#330977;">Experience:</b> <span style="color: #FF1493;">2 Years</span></h5>
+  </div>
+  <div class="col-sm-6 py-2">
+    <h5><span style="color:#330977;">Phone:</b> <span style="color: #FF1493;">+8801799095139</span></h5>
+  </div>
+  <div class="col-sm-6 py-2">
+    <h5><span style="color:#330977;">Email:</b> <span style="color: #FF1493;">marlindiba16@gmail.com</span></h5>
+  </div>
+  <div class="col-sm-6 py-2">
+    <h5><span style="color:#330977;">Address:</b> <span style="color: #FF1493;">Mohakhali, Bangladesh</span></h5>
+  </div>
+  <div class="col-sm-6 py-2">
+    <h5><span style="color: #330977;">Job:</b> <span style="color: #FF1493;">Seeking opportunities in Technology and Development and Data Science</span></h5>
+  </div>
+</div>
+
+
+
+                    <div class="d-flex justify-content-center pt-5 gap-10">
+ <a href="#contact" class="btn btn-cv">Hire Me</a>
+
+<a href="assets/docs/Learn More about Me.pdf" class="btn btn-cv" download="LearnMoreAboutMarlin.pdf">Learn More</a>
+
+  <a href="assets/docs/Diba_CV.pdf" class="btn btn-cv" download="MarlinDibaCV.pdf">Download CV</a>
+
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+  <div class="card-block">
+    <h2 style="color:#FF1493">Education</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="education-experience">
+          <small class="date" style="color:#BA55D3; display:block; margin-bottom:5px;">2019-2021</small>
+          <h3 class="h5 date-title" style="color:#fa1be4; font-weight:600; margin-bottom:5px;">Higher Secondary Certificate</h3>
+          <p style="color:#ff71c9; font-size:15px; margin-top:3px;">Holy Cross College</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="education-experience">
+          <small class="date" style="color:#BA55D3; display:block; margin-bottom:5px;">2009-2019</small>
+          <h3 class="h5 date-title" style="color:#fa1be4; font-weight:600; margin-bottom:5px;">Secondary School Certificate</h3>
+          <p style="color:#ff65c4; font-size:15px; margin-top:3px;">Bottomley Home Girls High School</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="education-experience">
+          <small class="date" style="color:#BA55D3; display:block; margin-bottom:5px;">2022-2026</small>
+          <h3 class="h5 date-title" style="color:#fa1be4; font-weight:600; margin-bottom:5px;">BSc. in CSE</h3>
+          <p style="color:#f672c3; font-size:15px; margin-top:3px;">Southeast University</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="card">
+  <div class="card-block">
+    <h2 style="color:#FF1493">Language</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="language-experience">
+          <h3 class="h5" style="color:#fe42b6">
+            English <small style="color:#fe42b6; font-weight:400;">Bilingual</small>
+          </h3>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="language-experience">
+          <h3 class="h5" style="color:#fe42b6
+           
+          ">
+            Bangla <small style="color:#fe42b6; font-weight:400;">Fluent</small>
+          </h3>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="language-experience">
+          <h3 class="h5" style="
+            color:#fe42b6">
+            Korean <small style="color:#fe42b6; font-weight:400;">Basic</small>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- My Skills Section -->
+<div class="card">
+  <div class="card-block">
+    <div class="position-relative d-flex align-items-center justify-content-center mb-4">
+      <h2 class="position-absolute text-uppercase text-primary">My Skills</h2>
+    </div>
+
+    <div class="row skills-row">
+
+      <!-- Web Development & Design -->
+      <div class="col-lg-6 col-md-6 mb-4 d-flex">
+        <div class="skill-card d-flex flex-column align-items-center text-center">
+          <i class="fa fa-2x fa-laptop service-icon mb-6"></i>
+          <h4 style="color:#ff0088;">Web Development & Design</h4>
+          <p>I specialize in web design and development, creating modern, responsive, and user-friendly websites. I blend creative design with clean coding using HTML, CSS, JavaScript, and other technologies to build visually appealing and functional web experiences.</p>
+        </div>
+      </div>
+
+      <!-- Database Management -->
+      <div class="col-lg-5 col-md-6 mb-4 d-flex">
+        <div class="skill-card d-flex flex-column align-items-center text-center">
+          <i class="fab fa-2x fa-android service-icon mb-3"></i>
+          <h4 style="color:#ff0088;">Database Management</h4>
+          <p>I have experience in database management, designing and maintaining efficient data structures using SQL and other database tools to ensure secure, organized, and optimized data storage.</p>
+        </div>
+      </div>
+
+      <!-- Machine Learning -->
+      <div class="col-lg-5 col-md-6 mb-4 d-flex">
+        <div class="skill-card d-flex flex-column align-items-center text-center">
+          <i class="fab fa-2x fa-apple service-icon mb-3"></i>
+          <h4 style="color:#ff0088;">Machine Learning</h4>
+          <p>I have knowledge in machine learning, developing models that analyze data and make intelligent predictions using Python, libraries like TensorFlow and scikit-learn.</p>
+        </div>
+      </div>
+
+      <!-- UI/UX Design -->
+      <div class="col-lg-5 col-md-6 mb-4 d-flex">
+        <div class="skill-card d-flex flex-column align-items-center text-center">
+          <i class="fa fa-2x fa-react service-icon mb-3"></i>
+          <h4 style="color:#ff0088;">UI/UX Design</h4>
+          <p>I focus on UI/UX design, creating intuitive and engaging user interfaces with smooth experiences by combining creativity, usability, and user-centered design principles.</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-4 d-flex">
+        <div class="skill-card d-flex flex-column align-items-center text-center">
+         <i class="fa fa-2x fa-react service-icon mb-3"></i>
+
+          <h4 style="color:#ff0088;">Front-End Frameworks</h4>
+          <p>I have experience with front-end frameworks like React.js, enabling me to build dynamic, interactive, and responsive web applications with reusable components and smooth user experiences</p>
+        </div>
+      </div>
+
+      <!-- Research -->
+      <div class="col-lg-5 col-md-6 mb-4 d-flex">
+        <div class="skill-card d-flex flex-column align-items-center text-center">
+          <i class="fa fa-2x fa-edit service-icon mb-8"></i>
+          <h4 style="color:#ff0088;">Research </h4>
+          <p>I have strong research skills, capable of gathering, analyzing, and interpreting information to support data-driven decisions and innovative solutions.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+.skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* space between cards */
+}
+
+.skills-row > .col-lg-5 {
+    display: flex;
+}
+
+.skill-card {
+    flex: 1;                /* ensures equal height for all cards */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.skill-card i {
+    color: #FF1493;         /* primary color for icons */
+}
+
+.skill-card h4 {
+    margin-bottom: 15px;
+    min-height: 50px;       /* aligns all headings across cards */
+    font-weight: bold;
+}
+
+.skill-card p {
+    flex-grow: 1;            /* makes text fill available space */
+    text-align: center;
+    color: #6c757d;          /* muted text */
+}
+</style>
+<!-- 
+        <div class="card">
+          <div class="card-block">
+            <h2 style="color:#FF1493">Work</h2>
+            <div  class="work-experience" style="color:#8A2BE2">
+              <small class="date">2026-2030</small>
+              <h3 class="h5 date-title" style="color:#BA55D3">Web developer - <a href="http://en.orson.io" title="Create professionnal website" style="color:#9370DB">Orson.io</a></h3>
+              
+
+              <span style="color:#783365;">I designed and developed responsive, user-friendly websites using HTML, CSS, and JavaScript. I collaborated with UI/UX designers to bring visually appealing and interactive designs to life, ensuring cross-browser compatibility and mobile optimization. My focus was on creating seamless user experiences and writing clean, maintainable code that enhanced website performance and scalability.</p>
+            </div>
+
+            <div class="work-experience" style="color:#8A2BE2">
+              <small class="date">2024-2025</small>
+              <h3 class="h5 date-title" style="color:#BA55D3">Web developer - <a href="http://mashup-template.com" title="" style="color:#9370DB">Mashup Template</a></h3>
+              
+              <span style="color:#783365;">I built dynamic web applications using modern frameworks like React and Node.js, integrating RESTful APIs and databases to deliver robust functionality. I worked closely with teams to implement end-to-end solutions, optimize performance, and troubleshoot complex issues. My role emphasized combining creativity with technical expertise to deliver scalable, high-quality web solutions that met client objectives.</p>
+            </div>
+          </div>
+        </div> -->
+        
+
+        
+<div class="card">
+  <div class="card-block">
+    <h2 style="color:#FF1493">Projects</h2>
+    
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="item active">
+          <img src="./assets/images/img-03.jpg" class="img-responsive" alt="Food Delivery App">
+
+          <!-- Caption over image -->
+          <div class="carousel-caption">
+            <h3 class="h5" style="color:#f654c8;">Food Delivery App</h3>
+            <p  style="color:#f969d0;">January 2024</p>
+          </div>
+
+          <!-- Description below image -->
+          <div class="slide-description text-center">
+            <p style="color:#e93ea7;">This food delivery app allows users to order meals from nearby restaurants with real-time tracking and integrated payment options.</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="item">
+          <img src="./assets/images/img-02.png" class="img-responsive" alt="Hotel Management System">
+
+          <div class="carousel-caption">
+            <h3 class="h5" style="color:#f654c8;">Hotel Management System </h3>
+            <p style="color:#f969d0;" >September 2024</p>
+          </div>
+
+          <div class="slide-description text-center">
+            <p style="color:#e93ea7;">A comprehensive hotel management system to handle bookings, check-ins, check-outs, and billing efficiently.</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="item">
+          <img src="./assets/images/img-04.jpg" class="img-responsive" alt="Smart Car Parking System">
+
+          <div class="carousel-caption">
+            <h3 class="h5" style="color:#f654c8;">Smart Car Parking System</h3>
+            <p style="color:#f969d0;">January 2025</p>
+          </div>
+
+          <div class="slide-description text-center">
+            <p style="color:#e93ea7;">An automated parking system that monitors available spaces, guides drivers, and manages parking efficiently.</p>
+          </div>
+        </div>
+
+        
+
+        <!-- Slide 4 -->
+        <div class="item">
+          <img src="./assets/images/img-05.png" class="img-responsive" alt="Small Fish in Bangladesh - Journal Paper">
+
+          <div class="carousel-caption">
+            <h3 class="h5" style="color:#f654c8;">Small Fish in Bangladesh - Journal Paper</h3>
+            <p style="color:#f969d0;">June 2025</p>
+          </div>
+
+          <div class="slide-description text-center">
+            <p style="color:#e93ea7;">A research project analyzing small fish species in Bangladesh, focusing on their habitat, population, and ecological impact.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      </ol>
+
+    </div>
+  </div>
+</div>
+
+<!-- CSS for slide descriptions -->
+<style>
+.slide-description {
+  background: #ffd3f7; /* light gray background below image */
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #333;
+  max-width: 90%;
+  margin: 10px auto 20px auto; /* top and bottom spacing */
+  font-size: 14px;
+}
+</style>
+
+        <div class="card">
+          <div class="card-block">
+            <h2 style="color:#FF1493">Social Network</h2>
+            <div class="row">
+              <div class="col-md-3">
+                <p class="social-buttons"><a href="https://www.instagram.com/_diba_16_?igsh=ejBsbGw0d3ZhZDNl" title=""><span class="social-round-icon fa-icon"><i class="fa fa-instagram"></i></span >@_diba_16_</a></p>
+              </div>
+              <div class="col-md-3">
+                <p class="social-buttons"><a href="https://www.linkedin.com/in/merlin-diba-biswas-2a938936b" title=""><span class="social-round-icon fa-icon"><i class="fa fa-linkedin"></i></span>Marlin Diba</a></p>
+              </div>
+              <div class="col-md-3">
+                <p class="social-buttons"><a href="https://github.com/marlindiba16" title=""><span class="social-round-icon fa-icon"><i class="fa fa-github"></i></span>Marlin Diba</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+<!-- <section id="contact" style="padding: 80px 20px 120px 20px; background-color: #000000; color: #fff; text-align: center;">
+  <h2 style="font-size: 36px; margin-bottom: 40px; color: #ff1493;">Contact Me</h2>
+  
+  <p>If you want to send me an email, click the button below:</p>
+  
+  Mailto Button -->
+  <!-- <a href="mailto:marlindiba16@gmail.com?subject=Hello%20Marlin&body=Hi%20Marlin,%0A%0AI%20would%20like%20to%20discuss%20..." 
+     class="btn btn-cv">
+     Send Me an Email
+  </a> -->
+<!-- </section> --> 
+<div class="card" style="background-color: #ffffff; padding: 30px; border-radius: 10px;">
+  <div class="card-block">
+       <div id="contact" class="card"></div>
+    <h2 style="color:#FF1493; text-align:left; margin-bottom: 30px;">Contact</h2>
+   <p style="text-align:left; color:#ff5ecc; font-size:16px; margin-bottom: 20px;">
+     <b> Click the button below to send me an email:</b>
+   </p>
+    <form class="reveal-content">
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="subject" placeholder="Subject">
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" rows="5" placeholder="Enter your message"></textarea>
+      </div>
+    </form>
+    
+    <!-- Mailto button -->
+    <div class="form-group" style="text-align:center; margin-top: 20px;">
+      <a href="mailto:marlindiba16@gmail.com?subject=Hello%20Marlin&body=Hi%20Marlin,%0A%0AI%20would%20like%20to%20discuss%20something%20with%20you."
+         class="btn btn-cv">
+         Send Message
+      </a>
+    </div>
+    
+  </div>
+</div>
+
+
+
+<style>
+   .btn-primary:hover {
+  background: linear-gradient(45deg, #5f27cd, #ff6b6b);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  color: #fff;
+}
+</style>
+
+ <!-- Customer Review Section -->
+<div class="card">
+  <div class="card-block">
+    <h2 style="color:#FF1493">Customer Reviews</h2>
+
+    <div id="reviewsCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Review 1 -->
+        <div class="carousel-item active">
+          <div class="review-box text-center">
+            <p>"Marlin designed our website beautifully and delivered it ahead of schedule. Highly recommended!"</p>
+            <h5 class="reviewer-name">– John Doe</h5>
+            <small>CEO, Example Company</small>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="carousel-item">
+          <div class="review-box text-center">
+            <p>"Excellent graphics and attention to detail. The website looks stunning and functions flawlessly."</p>
+            <h5 class="reviewer-name">– Jane Smith</h5>
+            <small>Marketing Head, Creative Agency</small>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="carousel-item">
+          <div class="review-box text-center">
+            <p>"Professional, creative, and responsive. Marlin exceeded all expectations!"</p>
+            <h5 class="reviewer-name">– Michael Lee</h5>
+            <small>Founder, Tech Startup</small>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <a class="carousel-control-prev" href="#reviewsCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#reviewsCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Embedded CSS -->
+<style>
+  /* Review Box Styling */
+  .review-box {
+    background: #f7f5fc;
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .review-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+
+  /* Text Styling */
+  .review-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-style: italic;
+    color: #333;
+  }
+
+  .reviewer-name {
+    font-weight: 700;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #ff6b6b, #5f27cd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease;
+  }
+
+  .reviewer-name:hover {
+    transform: scale(1.1);
+    -webkit-text-stroke: 0.5px #5f27cd;
+  }
+
+  .review-box small {
+    font-weight: 500;
+    color: #9b59b6;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Optional: Adjust carousel controls color */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #5f27cd;
+    border-radius: 50%;
+  }
+</style>
+
+
+</main>
+<footer class="footer-container white-text-container text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p><img src="./assets/images/mashup-icon.svg" alt=""></p>
+        
+        <p>©All right reserved. Design <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
+        <p>
+          <a class="fa-icon fa-icon-2x" href="https://facebook.com/" title="">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a class="fa-icon fa-icon-2x" href="https://twitter.com/" title="">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a class="fa-icon fa-icon-2x" href="https://dribbble.com/" title="">
+            <i class="fa fa-dribbble"></i>
+          </a>
+          <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/" title="">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a class="fa-icon fa-icon-2x" href="https://vimeo.com/" title="">
+            <i class="fa fa-vimeo"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     scrollRevelation('.card');
+  });
+</script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('send', 'pageview');
+</script>
+
+--><script type="text/javascript" src="./main.bc58148c.js"></script></body>
+
+</html>
